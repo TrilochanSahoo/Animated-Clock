@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
 html,
 body{
     width: 100vw;
@@ -6,6 +8,7 @@ body{
     border: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
 *,
@@ -17,7 +20,10 @@ body{
 #app{
     height: 100%;
     width: 100%;
-    background: teal;
+    background: url(image/pexels-pixabay-262325.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,13 +45,14 @@ body{
 .clock{
     display: flex;
     perspective: 1000px;
+    
 }
 
 .digit{
     position: relative;
     width: 45px;
     height: 80px;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.164);
 }
 
 .digit-left{
@@ -88,6 +95,7 @@ body{
     transform-origin: bottom;
     transform: rotateX(0);
     transition: transform .7s ease-in-out;
+    
 }
 
 .card.flipped{
@@ -118,7 +126,7 @@ body{
 .digit::after,
 .card-face-front,
 .card-face-back {
-    background: white;
+    background: #ffffff;
     color: black;
 }
 
@@ -134,7 +142,7 @@ body{
 .card-face-back{
     background: linear-gradient(0, #aaa, #ccc 50%, #fafafa);
     color: #212121;
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
@@ -143,7 +151,7 @@ body{
 .card-face-front{
     background: linear-gradient(0, #aaa, #ccc 50%, #fafafa);
     color: #212121;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -168,7 +176,8 @@ body{
 
 .colon{
     color: black;
-    margin: 0 6px;
+    margin: 0 8px;
     padding-bottom: 9px;
 }
+
 
